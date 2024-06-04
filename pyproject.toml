@@ -1,10 +1,10 @@
 [tool.poetry]
 name = "flamethrower"
-version = "0.1.0"
+version = "v0.1.7"
 description = "Python utility for processing Frostbite engine game files and interacting with the Frosty Editor."
 authors = ["MaxMixAlex <MaxMixAlex@protonmail.com>"]
 readme = "README.md"
-repository = "https://github.com/zyf722/flamethrower"
+repository = "https://github.com/BF1CHS/flamethrower"
 keywords = ["Frostbite", "entertainment", "reverse engineering", "game development"]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -20,19 +20,6 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.8"
-
-[tool.poetry.group.bf1chs.dependencies]
-requests = "^2.31.0"
-python-dateutil = "^2.8.2"
-
-[tool.poetry.group.dev.dependencies]
-types-requests = "^2.31.0.10"
-nuitka = "^1.9.3"
-types-python-dateutil = "^2.8.19.20240106"
-
-[tool.poetry.group.ui.dependencies]
-rich = "^13.7.0"
-inquirerpy = "^0.3.4"
 
 [build-system]
 requires = ["poetry-core"]
