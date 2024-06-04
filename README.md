@@ -1,3 +1,6 @@
+> [!NOTE]
+> This project is migrated from [zyf722/flamethrower](https://github.com/zyf722/flamethrower). For versions `v0.1.6` and earlier, please visit [Releases of that repository](https://github.com/zyf722/flamethrower/releases).
+
 # flamethrower
 > 🔥 ***Flamethrower***, where ❄️ ***Frostbite*** meets the dance of inferno.
 
