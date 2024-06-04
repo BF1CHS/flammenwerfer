@@ -3,7 +3,7 @@ import struct
 from abc import ABC, abstractmethod
 from typing import Any, Dict, Iterable, List, Optional, Set, Tuple, Union
 
-from .hash import fnv1_32_hash as loc_id_hash
+from flamethrower.hash.fnv import fnv1_32_hash as loc_id_hash
 
 
 class ChunkData(ABC):
@@ -287,7 +287,7 @@ class StringsBinary(ChunkData):
 
         Args:
             reader (io.BufferedReader): The buffer to read from.
-            encoding (str, optional): The encoding of the string. Defaults to "utf-8".
+            encoding (str, optional): The encoding of the string. Defaults to `"utf-8"`.
 
         Returns:
             str: The unpacked string.
@@ -505,7 +505,7 @@ class StringsBinary(ChunkData):
 
         Args:
             file_path (str): The path to the file.
-            update (bool, optional): Whether to update the chunk before saving. Defaults to True.
+            update (bool, optional): Whether to update the chunk before saving. Defaults to `True`.
         """
         assert self.buffer is not None
 
