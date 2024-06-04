@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "flammenwerfer"
-version = "v0.1.8"
+version = "v0.1.9"
 description = "Python utility for processing Frostbite engine game files and interacting with the Frosty Editor."
 authors = ["MaxMixAlex <MaxMixAlex@protonmail.com>"]
 readme = "README.md"
