@@ -11,15 +11,14 @@
 `flammenwerfer` is a Python package designed to provide a simple interface for modders to interact with the original Frostbite engine binaries. 
 
 ## Installation
-This package is managed by [Poetry](https://python-poetry.org/).
-
-**Currently, the package is in its early stages of development and is not yet ready for public use.** However, if you are interested, you can install the package by cloning the repository and running the following command:
-
-```bash
-poetry install
+```shell
+pip install flammenwerfer
 ```
 
-Then you can use the package in the virtual environment created by Poetry.
+In case you use Poetry:
+```shell
+poetry add flammenwerfer
+```
 
 ## Usage
 The package only supports the following features now:
@@ -32,7 +31,7 @@ Examples of how to use the package are available in the `examples` directory. Th
 ## Contributing
 Though the package is still in its early stages of development, [Pull Requests](https://github.com/BF1CHS/flammenwerfer/pulls) are welcome.
 
-You can setup your own copy of the source code with Git and Poetry:
+You can setup your own copy of the source code with Git and [Poetry](https://python-poetry.org/):
 
 ```shell
 # Git
