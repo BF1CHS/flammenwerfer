@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "flamethrower"
+name = "flammenwerfer"
 version = "v0.1.7"
 description = "Python utility for processing Frostbite engine game files and interacting with the Frosty Editor."
 authors = ["MaxMixAlex <MaxMixAlex@protonmail.com>"]
 readme = "README.md"
-repository = "https://github.com/BF1CHS/flamethrower"
+repository = "https://github.com/BF1CHS/flammenwerfer"
 keywords = ["Frostbite", "entertainment", "reverse engineering", "game development"]
 classifiers = [
     "Development Status :: 3 - Alpha",

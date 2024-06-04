@@ -3,7 +3,7 @@ import struct
 from abc import ABC, abstractmethod
 from typing import Any, Dict, Iterable, List, Optional, Set, Tuple, Union
 
-from flamethrower.hash.fnv import fnv1_32_hash as loc_id_hash
+from flammenwerfer.hash.fnv import fnv1_32_hash as loc_id_hash
 
 
 class ChunkData(ABC):
