@@ -157,14 +157,14 @@ class Histogram(ChunkData):
         ]
         shift_nums_count = len(shift_nums)
 
-        def calculate_byte_positions(chars):
+        def calculate_byte_positions(chars: List[str]):
             return [
                 inserted_start + shift_nums_count + (shift_nums_index - 0x80) + i
                 for i in range(len(chars))
             ]
 
-        def calculate_shift_nums_and_mappings(byte_positions):
-            shift_nums_set: set = set()
+        def calculate_shift_nums_and_mappings(byte_positions: List[str]):
+            shift_nums_set: Set[str] = set()
             for char, byte in zip(chars, byte_positions):
                 shift_num = chr(byte // 0x80)
                 if ord(shift_num) >= 0x80:
@@ -389,11 +389,9 @@ class StringsBinary(ChunkData):
 
                     if not check_shift:
                         # If this happens, it means that there is no proper shift to fit the character into range.
-                        # You may want to expand the shift range by calling `Histogram.expand_shift_range` method first.
+                        # You may want to expand the shift range by adding more characters to the histogram.
 
-                        raise ValueError(
-                            f"Error: Unable to encode character {char} to bytes."
-                        )
+                        raise ValueError(f"Unable to encode character {char} to bytes.")
 
         bin_string += b"\x00"
         return bin_string
